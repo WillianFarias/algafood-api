@@ -16,10 +16,20 @@ public class ConsultaCozinhaMain {
 
         CadastroCozinha cadastroCozinha = applicationContext.getBean(CadastroCozinha.class);
 
-        List<Cozinha> cozinhas = cadastroCozinha.cozinhas();
+        //Listar cozinhas persistidas
+//        List<Cozinha> cozinhas = cadastroCozinha.cozinhas();
+//
+//        for (Cozinha cozinha : cozinhas) {
+//            System.out.println(cozinha.getNome());
+//        }
 
-        for (Cozinha cozinha : cozinhas) {
-            System.out.println(cozinha.getNome());
-        }
+        Cozinha cozinhaBrasileira = new Cozinha();
+        cozinhaBrasileira.setNome("Brasileira");
+
+        Cozinha cozinhaMexicana = new Cozinha();
+        cozinhaMexicana.setNome("Mexicana");
+
+        cadastroCozinha.adicionar(cozinhaBrasileira);
+        cadastroCozinha.adicionar(cozinhaMexicana);
     }
 }
