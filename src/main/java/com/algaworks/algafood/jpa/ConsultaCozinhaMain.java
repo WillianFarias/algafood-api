@@ -6,8 +6,6 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationContext;
 
-import java.util.List;
-
 public class ConsultaCozinhaMain {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new SpringApplicationBuilder(AlgafoodApiApplication.class)
@@ -16,7 +14,7 @@ public class ConsultaCozinhaMain {
 
         CadastroCozinha cadastroCozinha = applicationContext.getBean(CadastroCozinha.class);
 
-        //Listar cozinhas persistidas
+        //LISTAR
 //        List<Cozinha> cozinhas = cadastroCozinha.cozinhas();
 //
 //        for (Cozinha cozinha : cozinhas) {
@@ -33,14 +31,20 @@ public class ConsultaCozinhaMain {
 //        cadastroCozinha.adicionar(cozinhaBrasileira);
 //        cadastroCozinha.adicionar(cozinhaMexicana);
 
-//        busca por id
+//        BUSCA
 //        System.out.println(cadastroCozinha.buscar(1L).getNome());
 
-//      atualiza
-        Cozinha cozinhaBrasileira = new Cozinha();
-        cozinhaBrasileira.setId(1);
-        cozinhaBrasileira.setNome("Brasileira");
+//      ATUALIZA
+//        Cozinha cozinhaBrasileira = new Cozinha();
+//        cozinhaBrasileira.setId(1L);
+//        cozinhaBrasileira.setNome("Brasileira");
+//
+//        cadastroCozinha.salvar(cozinhaBrasileira);
 
-        cadastroCozinha.adicionar(cozinhaBrasileira);
+//      REMOVE
+        Cozinha cozinha = new Cozinha();
+        cozinha.setId(1L);
+
+        cadastroCozinha.remover(cozinha);
     }
 }
