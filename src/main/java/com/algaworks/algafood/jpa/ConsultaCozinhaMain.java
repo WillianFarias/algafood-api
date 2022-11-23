@@ -23,6 +23,7 @@ public class ConsultaCozinhaMain {
 //            System.out.println(cozinha.getNome());
 //        }
 
+//        Cadastra novas cozinhas
 //        Cozinha cozinhaBrasileira = new Cozinha();
 //        cozinhaBrasileira.setNome("Brasileira");
 //
@@ -32,6 +33,14 @@ public class ConsultaCozinhaMain {
 //        cadastroCozinha.adicionar(cozinhaBrasileira);
 //        cadastroCozinha.adicionar(cozinhaMexicana);
 
-        System.out.println(cadastroCozinha.buscar(1L).getNome());
+//        busca por id
+//        System.out.println(cadastroCozinha.buscar(1L).getNome());
+
+//      atualiza
+        Cozinha cozinhaBrasileira = new Cozinha();
+        cozinhaBrasileira.setId(1);
+        cozinhaBrasileira.setNome("Brasileira");
+
+        cadastroCozinha.adicionar(cozinhaBrasileira);
     }
 }
