@@ -23,13 +23,15 @@ public class ConsultaCozinhaMain {
 //            System.out.println(cozinha.getNome());
 //        }
 
-        Cozinha cozinhaBrasileira = new Cozinha();
-        cozinhaBrasileira.setNome("Brasileira");
+//        Cozinha cozinhaBrasileira = new Cozinha();
+//        cozinhaBrasileira.setNome("Brasileira");
+//
+//        Cozinha cozinhaMexicana = new Cozinha();
+//        cozinhaMexicana.setNome("Mexicana");
+//
+//        cadastroCozinha.adicionar(cozinhaBrasileira);
+//        cadastroCozinha.adicionar(cozinhaMexicana);
 
-        Cozinha cozinhaMexicana = new Cozinha();
-        cozinhaMexicana.setNome("Mexicana");
-
-        cadastroCozinha.adicionar(cozinhaBrasileira);
-        cadastroCozinha.adicionar(cozinhaMexicana);
+        System.out.println(cadastroCozinha.buscar(1L).getNome());
     }
 }
