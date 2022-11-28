@@ -7,3 +7,5 @@ INSERT INTO restaurante (nome, taxa_frete, cozinha_id) VALUES ('Comidas Indianas
 INSERT INTO forma_pagamento (descricao) VALUES ('Pix');
 
 INSERT INTO permissao (nome, descricao) VALUES ('root', 'super usuario');
+
+INSERT INTO estado (nome) VALUES ('Brasilia');
