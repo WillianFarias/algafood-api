@@ -8,4 +8,6 @@ INSERT INTO forma_pagamento (descricao) VALUES ('Pix');
 
 INSERT INTO permissao (nome, descricao) VALUES ('root', 'super usuario');
 
-INSERT INTO estado (nome) VALUES ('Brasilia');
+INSERT INTO estado (id, nome) VALUES (1, 'Sao Luiz');
+
+INSERT INTO cidade (nome, estado_id) VALUES ('Sao Luiz', 1);
