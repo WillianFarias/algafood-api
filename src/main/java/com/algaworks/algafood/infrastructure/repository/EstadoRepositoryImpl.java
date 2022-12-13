@@ -17,7 +17,7 @@ public class EstadoRepositoryImpl implements EstadoRepository {
 
     @Override
     public List<Estado> todos() {
-        return manager.createQuery("from estado", Estado.class).getResultList();
+        return manager.createQuery("from Estado", Estado.class).getResultList();
     }
 
     @Override
